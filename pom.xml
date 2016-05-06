@@ -43,12 +43,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.191</version>
@@ -102,7 +96,9 @@
                             <url>jdbc:h2:file:${basedir}/data/db</url>
                             <username>sa</username>
                             <password></password>
-                            <srcFiles>${basedir}/data/schema.sql</srcFiles>
+                            <srcFiles>
+                                <srcFile>${basedir}/data/schema.sql</srcFile>
+                            </srcFiles>
                         </configuration>
                     </execution>
                 </executions>
