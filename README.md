@@ -1,12 +1,13 @@
 # robotic-hoover
 
 This project is a solution to the task described [here](https://github.com/lampkicking/java-backend-test).
-
-This project requires Java 8 and Maven.
+The project requires Java 8 and Maven.
 
 To build the package, run
 
+```
 mvn clean package
+```
 
 This will create a war file which can be deployed.
 
